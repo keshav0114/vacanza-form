@@ -1,0 +1,240 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+#header{
+	background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/background.png);
+	background-size: cover;
+	background-position: center;
+	height: 90vh;
+}
+.CSIlogo{
+	letter-spacing: 3px;
+	font-weight: 800;
+	font-family: 'Raleway',sans-serif;
+}
+.CSIlogo a{
+   	color: white;
+	text-decoration: none;
+}
+.nav{
+	font-size: 1.5rem;
+	padding: .5rem 2rem;
+	position: fixed;
+	width: 100%;
+	margin-top: 1rem;
+}
+#sidenav{
+	width: 250px;
+	height: 100vh;
+	position: fixed;
+	right: -250px;
+	top: 0;
+	background: rgba(238,244,242,.4);
+    transition: .5s;
+	z-index: 2;
+}
+ nav ul li {
+ 	list-style: none;
+ 	margin: 53px 20px;
+ }
+ nav ul li a{
+ 	text-decoration: none;
+ 	color: white;
+ }
+#menubtn{
+	width: 50px;
+	position: fixed;
+	right: 30px;
+	top: 15px;
+	cursor: pointer;
+	z-index: 2;
+}
+.logo{
+	height: 200px;
+	width: 200px;
+	opacity: .9;
+	transition: all .4s;
+}    
+.logo:hover{
+    width: 220px;
+    height: 220px;
+    transform: rotate(720deg);
+}
+.header_contents{
+   display: flex;
+   align-items: center;
+   height: 90%;
+   justify-content: center;
+  }
+.heading{
+	position: absolute;
+    margin-top: 22%;
+    color: white;
+    font-size: 7.29vw;
+    font-family: 'Raleway',sans-serif;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #00695c;
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+.heading__2{
+		position: absolute;
+		margin-top: 33%;
+		color: white;
+		font-size: 2vw;
+		font-family: 'Raleway',sans-serif;
+		letter-spacing: 1px;
+}
+.header_contents ul{
+	position: absolute;
+	margin-top: 42%;
+	color: white;
+	list-style-type: none;
+}
+.header_contents ul li{
+	display: inline-block;
+}
+.header_contents ul li a{
+	margin: 0 1rem;
+	padding: 1rem 1.5rem;
+	font-size: 1rem;
+	border: 2px solid #fff;
+	letter-spacing: 2px;
+	border-radius: 100px;
+	text-decoration: none;
+	color: white;
+}
+button{	
+    opacity: 0;
+	width: 0;
+	transition: all 1s;
+	background-color: transparent;
+	border-style: none;
+	color: white;
+}
+li:hover button{	
+   width: 15px;
+   opacity: 1;
+}
+  /*<!-- -----------------Rounds------------------------- -->*/
+ .rounds{
+  	padding: 45px 90px;
+ 	background-color: #eeeeee;
+ }
+.box{
+    overflow: hidden;
+    box-shadow: 7px 6px 15px rgba(0,0,0,.2);
+    background: white;
+    margin-bottom: 45px;
+}
+.left-col{
+	display: inline-block;
+    margin: 15px;
+	width: 67%;
+}
+.right-col{
+	float: right;
+	height: 285.1px;
+}
+.right-col img{  
+    clip-path:polygon(50% 0, 100% 0, 100% 100%, 0 100%); 
+    width: 25rem;
+    height: 17.8rem;
+}
+.heading1{
+	font-size: 25px;
+	color: #3f3c3d;
+	font-weight: 400;
+	border-bottom: 1px solid #e0e0e0;
+}
+.paragraph{
+    margin-top: 15px;
+    color: #737272;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 33px;
+}
+.heading2{
+	font-weight: 400;
+	font-size: 25px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: #737272;
+}
+.domains{
+    color: #737272;
+    font-size: 20px;
+    font-weight: 300;
+}
+.rule_btn{
+    border: 1px solid #00695c;
+    color: #00695c;
+    border-radius: 3px;
+    width: 75px; 
+    padding-left: 23px;
+    padding-top:10px ;
+    padding-bottom:10px;  
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.rule_btn:hover{
+   color: white;
+   background-color: #00695c;
+}
+.special1{
+	margin-top: 50px;
+}
+.special{
+	margin-bottom: 50px;
+}
+/*------------------footer------------------*/
+.footer{
+	position: relative;
+	overflow: hidden;
+}
+#footer_img{
+    display: block;	
+	background-size: cover;
+	background-position: center;
+	height: 20vh;
+	width: 100%;
+	z-index: 1;
+}
+.copy_right{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	background-color:#7805ad;
+	height: 30px;
+	color: white;
+	font-size: 12px;
+	z-index: 10;
+}
+.icons{
+	position: absolute;
+	padding-left: 45.7%;
+	padding-top: 3.5%;
+	z-index: 20;
+}
+#icon_size{
+	margin: 3px;
+	color: white;
+	font-size: 35px;
+}
+@keyframes zoominoutsinglefeatured {
+    0% {
+        transform: scale(1,1);
+    }
+    50% {
+        transform: scale(1.5,1.5);
+    }
+    100% {
+        transform: scale(1,1);
+    }
+}
+
+#footer_img{
+	animation: zoominoutsinglefeatured 8s infinite;
+}
